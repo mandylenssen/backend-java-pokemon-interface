@@ -18,7 +18,7 @@ public class Main {
     private static final ElectricPokemon raichu = new ElectricPokemon("Raichu", 80, 160, "Pokebrocks", "Raaaaiiiiicccchhhhuuuuuuu!!!!");
     private static final WaterPokemon gyarados = new WaterPokemon("Gyarados", 90, 180, "Pokeflakes", "Gyaaaaaaaaarrrraaaadoooos");
 
-    private static List<Pokemon> pokemons = Arrays.asList(charizard, blastoise, venusaur, ditto, raichu, gyarados);
+    private static final List<Pokemon> pokemons = Arrays.asList(charizard, blastoise, venusaur, ditto, raichu, gyarados);
 
 
     // Los in de main methode alle foutmeldigen op door (abstracte) klassen met variabelen en methoden te maken (en soms een import).
@@ -30,6 +30,7 @@ public class Main {
         String userA = speler_A.nextLine();
         PokemonTrainer player1 = new PokemonTrainer(userA, pokemons);
         System.out.println("To start your game, we have given you 6 Pokemons use");
+        System.out.println("these are the Pokemons you get:");
         System.out.println("these are the Pokemons you get:");
         pokemonGym.printPokemon(pokemons);
         System.out.println("Would you like to enter a gym looking for a fight?");
